@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:phantom="http://phantom.com/facelets">
+<h:head>
+	<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	
+		<script>
+			$(function() {
+				$("#dialog").dialog({
+					modal: true,
+					width:500,
+					resizable: false,
+					autoOpen : false,
+					show : {
+						effect : "blind",
+						duration : 100
+					},
+					hide : {
+						effect : "explode",
+						duration : 100
+					}
+				});
+				$("#opener").click(function() {
+					$("#dialog").dialog("open");
+				});
+			});
+		</script>
+</h:head>
+<h:body>
+<h:outputStylesheet library="css" name="custom.css" />
+<div id="dialog" title="Registration">
+	<phantom:registration></phantom:registration>
+</div>
+<button id="opener">Create account</button>
+</h:body>
+</html>

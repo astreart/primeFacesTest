@@ -1,0 +1,20 @@
+.ui-panelgrid tr,.ui-panelgrid td {
+	border-width: 0px;
+	border: ı‰ıÂ;
+	border-color: inherit;
+	padding: 4px 10px;
+}
+
+.ui-icon {
+	position: absolute;
+	top: 50%;
+	margin-top: -8px;
+}
+
+
+.ui-dialog .ui-dialog-titlebar-close span, .ui-dialog .ui-dialog-titlebar-minimize span, .ui-dialog .ui-dialog-titlebar-maximize span{
+	
+	margin-top: -8px;
+	margin-left: -8px;
+	display: block;
+}
